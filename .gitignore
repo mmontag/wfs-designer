@@ -5,6 +5,12 @@
 # Intellisense cache database
 *.ncb
 
+# User VCPROJ files
+*.user
+
+# Conflicted sync files
+*conflicted copy*.*
+
 # Qt generated files
 GeneratedFiles/
 
