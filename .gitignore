@@ -1,0 +1,14 @@
+# Visual Studio build results
+[Dd]ebug/
+[Rr]elease/
+
+# Intellisense cache database
+*.ncb
+
+# Qt generated files
+GeneratedFiles/
+
+# Misc.
+Get Down On It.wav
+WFS Designer Splashscreen.psd
+*_lt.* # listening test files
