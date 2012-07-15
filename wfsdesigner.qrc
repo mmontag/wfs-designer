@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="WFSDesigner">
+    <file>Resources/u.png</file>
+    <file>Resources/box.png</file>
+    <file>Resources/icon.png</file>
+    <file>Resources/line.png</file>
+    <file>Resources/doubleline.png</file>
+    <file>Resources/multiline.png</file>
+    <file>Resources/multicircle.png</file>
+    <file>Resources/circle.png</file>
+  </qresource>
+</RCC>
