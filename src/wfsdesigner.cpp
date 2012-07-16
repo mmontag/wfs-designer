@@ -10,31 +10,6 @@
 #include <QTimer>
 #include <QInputDialog>
 
-/*
-
-// Windows Timer Functions
-double PCFreq = 0.0;
-__int64 CounterStart = 0;
-
-void StartCounter()
-{
-    LARGE_INTEGER li;
-    if(!QueryPerformanceFrequency(&li))
-        qDebug() << "QueryPerformanceFrequency failed!\n";
-
-    PCFreq = double(li.QuadPart)/1000.0;
-
-    QueryPerformanceCounter(&li);
-    CounterStart = li.QuadPart;
-}
-double GetCounter()
-{
-    LARGE_INTEGER li;
-    QueryPerformanceCounter(&li);
-    return double(li.QuadPart-CounterStart)/PCFreq;
-}
-*/
-
 WFSDesigner::WFSDesigner(QWidget *parent, Qt::WFlags flags)
 	: QMainWindow(parent, flags)
 {
@@ -126,7 +101,7 @@ WFSDesigner::WFSDesigner(QWidget *parent, Qt::WFlags flags)
 
 	/* 
 
-	BEGIN TEST SETTINGS STUFF
+	BEGIN TEST SETTINGS STUFF 
 
 	*/
 	//loadTestSettings();
@@ -138,37 +113,7 @@ WFSDesigner::~WFSDesigner()
 }
 
 void WFSDesigner::on_actionRun_Listening_Test_triggered() {
-	/*
-	QMessageBox msgBox;
-	int ret;
-	QTimer timer;
-	if(virtualSourceModel->rowCount() > 0) virtualSourceModel->removeRows(0, virtualSourceModel->rowCount());
-	on_stopAudio_clicked();
 
-	msgBox.setText("Welcome to the WFS Designer Listening Test.");
-	msgBox.setInformativeText("Test will commence when you click OK. Ready?");
-	msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Ok);
-	msgBox.setIcon(QMessageBox::Information);
-	msgBox.setDefaultButton(QMessageBox::Ok);
-	ret = msgBox.exec();
-	if(ret == QMessageBox::Cancel) return;
-
-	msgBox.setText("Test Tone 1");
-	msgBox.setInformativeText("Test tone will now begin playing. Click Ok to continue to the next test tone.");
-	ret = msgBox.exec();
-
-	VirtualSource* vs = virtualSourceModel->addSource("noise-bandlimited-6-pulse.wav",100,-300,200);
-	initSource(vs);
-
-	on_startAudio_clicked();
-
-	msgBox.setInformativeText("You should now hear a test tone. The tone will play for a few seconds. Click ok to remove the source.");
-	ret = msgBox.exec();
-
-	virtualSourceModel->removeRows(0,1);
-	VirtualSource* vs = virtualSourceModel->addSource("noise-bandlimited-6-pulse.wav",100,-300,200);
-	initSource(vs);
-	*/
 	wfsListeningTest->show();
 
 }

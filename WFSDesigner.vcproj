@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="WFSDesigner"
 	ProjectGUID="{5FF78545-C05F-42D6-8E6F-6FF861F80566}"
+	RootNamespace="WFSDesigner"
 	Keyword="Qt4VSv1.0"
 	TargetFrameworkVersion="0"
 	>
@@ -81,6 +82,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
+				CommandLine="copy /Y &quot;$(TargetPath)&quot; &quot;$(SolutionDir)\bin\&quot;"
 			/>
 		</Configuration>
 		<Configuration
